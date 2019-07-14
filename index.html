@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket.IO chat</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            $('#join').click(function() {
+                let v = $('#m').val()
+                if(v === "") return
+                window.location.href = encodeURI(`http://chat.cyber28.xyz/chat?username=${v}`)
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="m" autocomplete="off" placeholder="Username"/><button id="join">Join</button>
+</body>
+</html>
