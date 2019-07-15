@@ -9,7 +9,7 @@
             $('#join').click(function() {
                 let v = $('#m').val()
                 if(v === "") return
-                window.location.href = encodeURI(`http://chat.cyber28.xyz/chat?username=${v}`)
+                window.location.href += encodeURI(`/chat?username=${v}`)
             })
         })
     </script>
